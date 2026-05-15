@@ -1,0 +1,20 @@
+#代碼預覽
+import string
+import time
+text="Hello World Im Gay"
+tremp=''
+for aa in text:
+    for ab in string.printable:
+        if ab==aa or aa==" ":
+            time.sleep(0.02)
+            f=tremp+ab
+            print(f)
+            tremp+=aa
+            if f=="Hello World Im Gay":
+                for p in range(90):
+                    time.sleep(0.02)
+                    print(f)
+            break
+        else:
+            time.sleep(0.02)
+            print(tremp+ab)
